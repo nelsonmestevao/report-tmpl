@@ -1,0 +1,23 @@
+title: Redes de Computadores
+subtitle: Protocolo IPv4
+date: Novembro 2019
+logo: EEUM.png
+author:
+  - name: Hugo Carvalho
+    number: A85579
+    avatar: hugo.jpeg
+  - name: Nelson Estevão
+    number: A76434
+    avatar: nelson.jpeg
+  - name: Pedro Ribeiro
+    number: A85493
+    avatar: pedro.jpeg
+  - name: Ricardo Silva
+    number: A84123
+    avatar: ricardo.jpeg
+  - name: Rui Mendes
+    number: A83712
+    avatar: rui.jpeg
+toc: true
+numbersections: true
+geometry: margin=2.5cm

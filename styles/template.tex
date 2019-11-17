@@ -1,14 +1,16 @@
 \documentclass[11pt,a4paper]{article}
+
 $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$
 \usepackage{lmodern}
 $endif$
-\usepackage[portuguese]{babel}
+
 $if(linestretch)$
 \usepackage{setspace}
 \setstretch{$linestretch$}
 $endif$
+
 \usepackage{amssymb,amsmath}
 \usepackage[absolute]{textpos}
 
@@ -74,10 +76,30 @@ $endif$
 $if(colorlinks)$
 \PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
 $endif$
+
 \hypersetup{unicode=true,
-  pdftitle={RC_TP2_G07},
-  pdfauthor={Nelson Miguel de O. Estevão, Pedro Alexandre Gonçalves Ribeiro, Rui Filipe Moreira Mendes},
+  $if(title)$
+  pdftitle={$title$},
+  $endif$
+  $if(subtitle)$
+  pdfsubject={$subtitle$},
+  $endif$
+  $if(author)$
+  pdfauthor={
+    $for(author)$
+      $author.name$,
+    $endfor$
+  },
+  $endif$
+  $if(keywords)$
+  pdfkeywords={
+    $for(keywords)$
+      $keywords$;
+    $endfor$
+  },
+  $endif$
 }
+
 \urlstyle{same}  % don't use monospace font for urls
 $if(lang)$
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
@@ -188,9 +210,9 @@ $endif$
 
 \begin{document}
 
-%------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % TITLE PAGE
-%------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 $if(title)$
 
 \begin{titlepage} % Suppresses headers and footers on the title page
@@ -245,7 +267,7 @@ $if(title)$
   % Date
   %------------------------------------------------
 
-  $if(date)${\large $date$}$endif$ % Publisher and logo
+  $if(date)${\large $date$}$endif$
 
   \vspace*{2\baselineskip} % Whitespace at the bottom of the page
 

@@ -18,9 +18,7 @@ author:
   - name: Rui Mendes
     number: A83712
     avatar: rui.jpeg
-keywords:
-    - IPv4
-    - Networks
+keywords: [IPv4, Networks]
 lang: pt-PT
 toc: true
 numbersections: true

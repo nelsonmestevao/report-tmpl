@@ -1,10 +1,10 @@
 #==============================================================================
 SHELL   = zsh
 #------------------------------------------------------------------------------
-FILTERS = -F pandoc-crossref -F pandoc-include-code
+FILTERS = -F pandoc-crossref -F pandoc-xnos # -F pandoc-include-code
 OPTIONS = --template=styles/template.tex $(FILTERS)
 CONFIG  = --metadata-file config.yml
-BIB     = --filter pandoc-citeproc --bibliography=references.bib
+BIB     = --citeproc --bibliography=references.bib
 #------------------------------------------------------------------------------
 SRC     = $(shell ls $(SRC_DIR)/**/*.md)
 SRC_DIR = sections

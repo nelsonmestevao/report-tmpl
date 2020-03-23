@@ -252,11 +252,11 @@ $if(title)$
     $endfor$
     \\
     $for(author)$
-    $author.name$ &
+      $author.name$ &
     $endfor$
     \\
     $for(author)$
-    $author.number$ &
+      $author.number$ &
     $endfor$
   \end{tabular}
   $endif$
@@ -267,7 +267,12 @@ $if(title)$
   % Date
   %------------------------------------------------
 
-  $if(date)${\large $date$}$endif$
+  $if(date)$
+    {\large $date$}
+  $else$
+    {\large \today}
+  $endif$
+
 
   \vspace*{2\baselineskip} % Whitespace at the bottom of the page
 

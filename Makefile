@@ -2,7 +2,7 @@
 SHELL   = zsh
 #------------------------------------------------------------------------------
 FILTERS = -F pandoc-crossref -F pandoc-include-code
-OPTIONS = --template=styles/template.tex $(FILTERS)
+OPTIONS = --template=styles/eisvogel.tex $(FILTERS)
 CONFIG  = --metadata-file config.yml
 BIB     = --filter pandoc-citeproc --bibliography=references.bib
 #------------------------------------------------------------------------------

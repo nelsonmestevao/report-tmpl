@@ -1,25 +1,26 @@
-title: Redes de Computadores
-subtitle: Protocolo IPv4
-date: Novembro 2019
-logo: EEUM.png
-author:
-  - name: Hugo Carvalho
-    number: A85579
-    avatar: hugo.jpeg
-  - name: Nelson Estevão
-    number: A76434
-    avatar: nelson.jpeg
-  - name: Pedro Ribeiro
-    number: A85493
-    avatar: pedro.jpeg
-  - name: Ricardo Silva
-    number: A84123
-    avatar: ricardo.jpeg
-  - name: Rui Mendes
-    number: A83712
-    avatar: rui.jpeg
-keywords: [IPv4, Networks]
+title: Tic Tac Logic
+subtitle: Geração de Tabuleiros com Solução Única
+subject: Laboratórios de Informática II
+date: Junho 2018
+# logo: EEUM.png
+author: [Nelson Estevão, Pedro Ribeiro, Rui Mendes]
+  # - name: Nelson Estevão
+  #   number: A76434
+  #   avatar: nelson.jpeg
+  # - name: Pedro Ribeiro
+  #   number: A85493
+  #   avatar: pedro.jpeg
+  # - name: Rui Mendes
+  #   number: A83712
+  #   avatar: rui.jpeg
+keywords: [C, CGIs]
 lang: pt-PT
 toc: true
 numbersections: true
-geometry: margin=2.5cm
+# geometry: margin=2.5cm
+titlepage: true
+# titlepage-color: FFFFFF
+# titlepage-text-color: FFFFFF
+# titlepage-rule-color: 360049
+# titlepage-rule-height: 0
+# titlepage-background: figures/background.pdf

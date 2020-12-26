@@ -9,7 +9,7 @@ BASE_DIR=$(dirname "${BASH_SOURCE[0]:-$0}")
 # shellcheck source=./colors.sh
 . "${BASE_DIR}/utils.sh"
 
-VERSION=0.2.4
+VERSION=0.2.5
 
 function log() {
   local LABEL="$1"
@@ -40,7 +40,7 @@ function log_info() {
   local LABEL="INFO"
 
   if ! [ "$#" -eq 1 ]; then
-    LABEL=$(echo "$1" | tr [a-z] [A-Z])
+    LABEL=$(echo "$1" | tr '[a-z]' '[A-Z]')
     shift 1
   fi
 

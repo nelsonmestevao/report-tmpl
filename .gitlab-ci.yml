@@ -13,8 +13,9 @@ build:
   script:
     - make pdf
   only:
-      - merge_request
-      - main
+    - merge_request
+    - main
+    - master
   artifacts:
     paths:
       - '*.pdf'

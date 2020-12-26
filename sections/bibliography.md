@@ -1,9 +1,8 @@
-\newpage 
+\newpage
 
 ---
 nocite: |
-    @*
+  @*
 ---
 
 # Bibliografia
-

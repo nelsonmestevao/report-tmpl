@@ -1,6 +1,5 @@
 title: Redes de Computadores
 subtitle: Protocolo IPv4
-# date: Novembro 2019
 logo: EEUM.png
 author:
   - name: Hugo Carvalho
@@ -20,6 +19,8 @@ author:
     avatar: rui.jpeg
 keywords: [IPv4, Networks]
 lang: pt-PT
+fontsize: 11pt
 toc: true
 numbersections: true
 geometry: margin=2.5cm
+titlepage: true

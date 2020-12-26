@@ -20,9 +20,9 @@ REPORT  = report
 #==============================================================================
 
 define compile
-	@echo -en "Compiling $(REPORT).$1 ... "
-	@pandoc $(CONFIG) $(OPTIONS) $(BIB) -s $(SRC) -o $(REPORT).pdf
-	@echo -e "$(OK_COLOR)"
+	@echo -en "Compiling $(REPORT).$1 ... ";
+	@pandoc $(CONFIG) $(OPTIONS) $(BIB) -s $(SRC) -o $(REPORT).pdf;
+	@echo -e "$(OK_STRING)";
 endef
 
 pdf:

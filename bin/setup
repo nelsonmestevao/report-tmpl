@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+. scripts/helpers.sh
+
+echo_info "setup" "Creating docker image"
+docker-compose build

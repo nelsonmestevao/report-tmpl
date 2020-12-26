@@ -1,0 +1,9 @@
+\newpage 
+
+---
+nocite: |
+    @*
+---
+
+# Bibliografia
+

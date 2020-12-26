@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+. scripts/helpers.sh
+
+echo_info "build" "Generating pdf"
+docker-compose run --rm make

@@ -1,0 +1,21 @@
+image:
+  name: pandoc/latex:latest
+  entrypoint: [""]
+
+before_script:
+  - apk add --update make
+
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - make pdf
+  only:
+      - merge_request
+      - main
+  artifacts:
+    paths:
+      - '*.pdf'
+

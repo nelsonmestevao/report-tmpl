@@ -1,4 +1,4 @@
-# Introdução {#sec:intro}
+# Revisão de Literatura {#sec:literature-review}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec diam urna,
 malesuada ac tincidunt sed, laoreet quis mi. Etiam est arcu, bibendum sed
@@ -15,8 +15,6 @@ amet ornare tortor. Sed nunc elit, commodo sed tellus non, malesuada euismod
 sapien. Orci varius natoque penatibus et magnis dis parturient montes,
 nascetur ridiculus mus. Praesent purus libero, porta sodales ornare ut,
 accumsan et eros.
-
-![Logo EEUM](figures/EEUM.png){ width=5cm}
 
 Donec scelerisque at elit ut consequat. Pellentesque in risus quis erat
 lacinia dictum. Aliquam egestas massa neque, at rutrum odio convallis sit
@@ -42,3 +40,24 @@ luctus malesuada eget vitae erat. Aliquam nec euismod enim. Fusce tincidunt
 elementum enim vel sagittis. Nullam vitae ex eu neque vulputate luctus.
 Curabitur at lacus volutpat, venenatis tellus eget, scelerisque felis. Mauris
 blandit enim non elementum tristique.
+
+Morbi fringilla lobortis lacinia. Donec quis tincidunt lacus, vitae dictum
+ipsum. Nulla facilisi. Nunc a eleifend velit. Cras leo purus, vulputate vel
+mattis quis, imperdiet quis massa. Etiam rutrum, lacus in pharetra pulvinar,
+turpis mauris malesuada diam, volutpat pharetra velit purus sed leo.
+Pellentesque sodales luctus ante gravida imperdiet. Nunc imperdiet est vel
+mauris commodo, id varius ligula venenatis. Aenean blandit varius viverra.
+Vivamus pharetra elit elit, nec faucibus turpis ultrices ut. Mauris pretium
+diam odio, non malesuada purus porta sed. Pellentesque eu egestas metus.
+
+Fusce vel nisl non velit ullamcorper pharetra. In venenatis non erat eget
+vulputate. Duis ornare fermentum mi. Morbi eget tincidunt purus, a mattis
+libero. Phasellus varius, arcu eu scelerisque lacinia, nulla magna pharetra
+ex, quis faucibus justo dui sit amet elit. Integer pellentesque est eget
+tellus vestibulum, id mattis sapien consectetur. Sed at tellus vitae lorem
+eleifend fermentum. Quisque non urna ut ligula tincidunt commodo eu quis
+arcu. Mauris posuere nisl id diam porta, quis luctus lorem volutpat. Nullam
+blandit nulla ultrices augue cursus, eget dictum tellus iaculis. Morbi sem
+metus, interdum a eleifend sit amet, convallis et elit. Morbi ut porta elit,
+vel rutrum lacus. Curabitur tortor metus, luctus sed dolor eu, laoreet
+ultrices leo.

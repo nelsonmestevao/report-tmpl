@@ -8,11 +8,18 @@ BIB     = --citeproc --bibliography=references.bib --csl styles/ieee.csl
 #------------------------------------------------------------------------------
 SRC     = $(shell ls $(SRC_DIR)/*.md)
 SRC_DIR = sections
+UTI_DIR = scripts
 REPORT  = report
 #==============================================================================
 
+.DEFAULT_GOAL = pdf
+
 pdf:
-	pandoc $(CONFIG) $(OPTIONS) $(BIB) -s $(SRC) -o $(REPORT).pdf
+	pandoc $(CONFIG) \
+	 $(OPTIONS) \
+	 $(BIB) \
+	 -s $(SRC) \
+	 -o $(REPORT).pdf
 
 tex:
 	pandoc $(CONFIG) $(OPTIONS) $(BIB) -s $(SRC) -o $(REPORT).tex

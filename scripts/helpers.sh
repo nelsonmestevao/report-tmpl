@@ -9,7 +9,7 @@ BASE_DIR=$(dirname "${BASH_SOURCE[0]:-$0}")
 # shellcheck source=./colors.sh
 . "${BASE_DIR}/utils.sh"
 
-VERSION=0.2.3
+VERSION=0.2.4
 
 function log() {
   local LABEL="$1"
@@ -53,7 +53,7 @@ function load_env() {
   if [ -f "$ENV_FILE" ]; then
     . "$ENV_FILE"
   else
-    echo_error "Couldn't locate ${ENV_FILE} file..."
+    log_error "Couldn't locate ${ENV_FILE} file..."
   fi
   set +a
 }

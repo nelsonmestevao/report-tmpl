@@ -16,8 +16,13 @@ BIB     = --citeproc --bibliography=references.bib --csl styles/ieee.csl
 #------------------------------------------------------------------------------
 SRC     = $(shell ls $(SRC_DIR)/*.md)
 SRC_DIR = sections
+#------------------------------------------------------------------------------
 REPORT  = report
 #==============================================================================
+
+define show
+	@./$(UTI_DIR)/fmt.sh --color $(1) --type $(2) $(3)
+endef
 
 define compile
 	@echo -en "Compiling $(REPORT).$1 ... "

@@ -32,7 +32,7 @@ tex:
 	$(call compile,$@)
 
 clean:
-	@echo "Cleaning..."
 	@-cat .art/maid.ascii
+	@echo -en "Cleaning ... "
 	@rm $(REPORT).pdf
-	@echo "...✓ done!"
+	@echo -e "$(OK_STRING)"

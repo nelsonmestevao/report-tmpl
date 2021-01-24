@@ -21,7 +21,9 @@ REPORT  = report
 
 define compile
 	@echo -en "Compiling $(REPORT).$1 ... ";
-	@pandoc $(CONFIG) $(OPTIONS) $(BIB) -s $(SRC) -o $(REPORT).$1;
+	@pandoc $(CONFIG) $(OPTIONS) $(BIB) -s $(SRC) -o $(REPORT).$1 \
+		2> /tmp/makefile.log || { echo -e "$(ERROR_STRING)"; \
+		cat /tmp/makefile.log ; exit 1; };
 	@echo -e "$(OK_STRING)";
 endef
 

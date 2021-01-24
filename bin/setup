@@ -7,11 +7,11 @@ cd "${BASE_DIR}/.." || exit 127
 
 # shellcheck source=../scripts/helpers.sh
 . scripts/helpers.sh
-# shellcheck source=../scripts/utils.sh
-. scripts/utils.sh
+# shellcheck source=../scripts/logging.sh
+. scripts/logging.sh
 
 PROGRAM=$(basename "${BASH_SOURCE[0]:-$0}")
-VERSION=0.2.3
+VERSION=0.4.1
 
 function display_help() {
   cat <<EOF
@@ -32,7 +32,7 @@ case ${1:-docker} in
     display_help
     ;;
   -v | --version)
-    display_version "$PROGRAM" "$VERSION"
+    display_version "${VERSION}" "${PROGRAM}"
     ;;
   docker)
     log_info "build" "Building docker image"

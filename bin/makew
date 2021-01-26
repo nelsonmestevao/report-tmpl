@@ -19,7 +19,7 @@ function display_help() {
     ${PROGRAM} [options] [<command>]
 
   $(help_title_section Commands)
-    pdf   <- default value
+$(make help)
 
   $(help_title_section Options)
     -h --help         Show this screen.
@@ -27,20 +27,14 @@ function display_help() {
 EOF
 }
 
-case ${1:-pdf} in
+case ${1:-default} in
   -h | --help)
     display_help
     ;;
   -v | --version)
     display_version "${VERSION}" "${PROGRAM}"
     ;;
-  pdf)
-    log_info "Compile" "Generating pdf"
-    bin/makew pdf
-    log_success "Everything was built successfully"
-    ;;
   *)
-    display_help >&2
-    exit 1
+    docker-compose run --rm report make "$@" 2>/dev/null || (display_help >&2 && exit 1)
     ;;
 esac

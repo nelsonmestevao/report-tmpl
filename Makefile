@@ -30,14 +30,22 @@ define compile
 	@echo -e "$(OK_STRING)"
 endef
 
+.PHONY: pdf # Compile the document to a PDF
 pdf:
 	$(call compile,$@)
 
+.PHONY: tex # Generate the TeX file
 tex:
 	$(call compile,$@)
 
+.PHONY: clean # Clean all generated artifacts
 clean:
 	@-cat .art/maid.ascii
 	@echo -en "Cleaning ... "
 	@rm $(REPORT).pdf
 	@echo -e "$(OK_STRING)"
+
+.PHONY: help # Generate list of targets with descriptions
+help:
+	@grep '^.PHONY: .* #' Makefile | sed 's/\.PHONY: \(.*\) # \(.*\)/    \1 \t \2/'
+

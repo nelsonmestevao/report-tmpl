@@ -20,6 +20,8 @@ SRC_DIR = sections
 REPORT  = report
 #==============================================================================
 
+.DEFAULT_GOAL = pdf
+
 define show
 	@./$(UTI_DIR)/fmt.sh --color $(1) --type $(2) $(3)
 endef
